@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    omniauth_crowd (2.0.0)
+    omniauth_crowd_sso (2.0.1)
       nokogiri (>= 1.4.4)
       omniauth (~> 1.0)
 
@@ -12,8 +12,8 @@ GEM
     crack (0.1.8)
     diff-lcs (1.1.2)
     hashie (1.2.0)
-    nokogiri (1.5.0)
-    omniauth (1.0.0)
+    nokogiri (1.5.2)
+    omniauth (1.1.0)
       hashie (~> 1.2)
       rack
     rack (1.2.2)
@@ -36,8 +36,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.0.0)
-  omniauth_crowd!
+  bundler (~> 1.1.0)
+  omniauth_crowd_sso!
   rack
   rack-test
   rake
