@@ -7,7 +7,7 @@ module OmniAuth
         DEFAULT_AUTHENTICATION_URL = "%s/rest/usermanagement/latest/session?expand=user"
         DEFAULT_TOKEN_URL = "%s/rest/usermanagement/latest/session/"
         DEFAULT_USER_GROUP_URL = "%s/rest/usermanagement/latest/user/group/direct"
-        attr_reader :crowd_application_name, :crowd_password, :disable_ssl_verification, :include_users_groups, :signin_url
+        attr_reader :crowd_application_name, :crowd_password, :disable_ssl_verification, :include_users_groups
 
         alias :"disable_ssl_verification?" :disable_ssl_verification
         alias :"include_users_groups?" :include_users_groups
@@ -76,8 +76,6 @@ module OmniAuth
             @user_group_url         = options[:crowd_user_group_url] || DEFAULT_USER_GROUP_URL % options[:crowd_server_url]
             validate_is_url 'user group URL', @user_group_url
           end
-
-          @signin_url = options[:signin_url]
 
         end
 
